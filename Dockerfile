@@ -24,12 +24,12 @@ RUN \
  mkdir -p \
 	/heimdall && \
  if [ -z ${HEIMDALL_RELEASE+x} ]; then \
-	HEIMDALL_RELEASE=$(curl -sX GET "https://api.github.com/repos/linuxserver/Heimdall/releases/latest" \
+	HEIMDALL_RELEASE=$(curl -sX GET "https://api.github.com/repos/sequent5/heimdalltest/releases/latest" \
 	| awk '/tag_name/{print $4;exit}' FS='[""]'); \
  fi && \
  curl -o \
  /heimdall/heimdall.tar.gz -L \
-	"https://github.com/linuxserver/Heimdall/archive/${HEIMDALL_RELEASE}.tar.gz" && \
+	"https://github.com/sequent5/heimdalltest/archive/${HEIMDALL_RELEASE}.tar.gz" && \
  echo "**** cleanup ****" && \
  rm -rf \
 	/tmp/*
