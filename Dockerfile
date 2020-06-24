@@ -30,7 +30,7 @@ RUN \
  curl -o \
  /heimdall/heimdall.tar.gz -L \
 	"https://github.com/sequent5/heimdall/archive/${HEIMDALL_RELEASE}.tar.gz" && \
- echo "****cleanup****" && \
+ echo "**** cleanup ****" && \
  rm -rf \
 	/tmp/*
 
