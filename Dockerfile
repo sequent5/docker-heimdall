@@ -4,7 +4,8 @@ FROM lsiobase/nginx:3.11
 ARG BUILD_DATE
 ARG VERSION
 ARG HEIMDALL_RELEASE
-LABEL build_version="Linuxserver.io version:- ${VERSION} Build-date:- ${BUILD_DATE}"
+#LABEL build_version="Linuxserver.io version:- ${VERSION} Build-date:- ${BUILD_DATE}"
+LABEL build_version="2.2.3"
 LABEL maintainer="aptalca"
 
 # environment settings
